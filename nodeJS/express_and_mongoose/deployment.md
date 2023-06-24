@@ -22,7 +22,7 @@ Hosting providers are like server landlords. They own servers and rent space on 
 
 You've already had some experience using a hosting provider when you deployed projects to Github pages earlier in the curriculum. GitHub pages is great for hosting **static** web pages for free, but we won't be able to use it for hosting our **dynamic** NodeJS apps. We're going to need something more powerful.
 
-#### Static vs Dynamic Sites
+### Static vs Dynamic Sites
 
 Static websites consist of pre-written HTML pages. They are "static" because everyone who visits them will see the same content. To build static sites, you only need HTML, CSS and Javascript.
 
@@ -63,7 +63,7 @@ The peace of mind this affords you can't be overstated. You never want to be in 
 With NodeJS, we will be using MongoDB, a popular open-source database. Many PaaS services come with SQL databases included, but since we are going to be using MongoDB (a no-SQL database), we have a few choices on how to spin it up. We could:
 
 1. Use Railway, a PaaS with integrated MongoDB database services, or
-1. Use any of PaaS service, and connect it to a [MongoDB Atlas](https://www.mongodb.com/atlas/database) instance. The instructions in their [getting started guide](https://www.mongodb.com/docs/atlas/getting-started/) make it easy!
+1. Use any of the recommended PaaS services, and connect it to a [MongoDB Atlas](https://www.mongodb.com/atlas/database) instance. The instructions in their [getting started guide](https://www.mongodb.com/docs/atlas/getting-started/) make it easy!
 
 Either choice isn't too difficult to setup, but it's always nice to have a fallback option! Later in this course, we will be following the MDN tutorial's instructions on deploying both our app and database connection to Railway. For now, we encourage you to try and figure out how to deploy your mini-message board project with just what you learn in this lesson. However, If you're having too much trouble, don't fret. Just come back to it later once you've finished the MDN tutorial and have that bit of deployment experience under your belt.
 
@@ -73,7 +73,7 @@ PaaS providers will give you a random domain name when you first deploy. In Hero
 
 The domain name will always be yours on a PaaS provider. They give each app a unique domain name that's yours as long as your app lives on their platform.
 
-In the real world, you'll want to link it to your own custom domain, for example, `http://mycooldomain.com`. It's worth mentioning that you don't need custom domain names for the portfolio projects you'll be building in this course. The random domains you're PaaS provider gives you will be good enough. However, if you have an itch for tricking out your app with a custom domain name, you'll first need to purchase a domain from a registrar like [Porkbun](https://porkbun.com/) or [NameSilo](https://www.namesilo.com/).
+In the real world, you'll want to link it to your own custom domain, for example, `http://mycooldomain.com`. It's worth mentioning that you don't need custom domain names for the portfolio projects you'll be building in this course. The random domains your PaaS provider gives you will be good enough. However, if you have an itch for tricking out your app with a custom domain name, you'll first need to purchase a domain from a registrar like [Porkbun](https://porkbun.com/) or [NameSilo](https://www.namesilo.com/).
 
 To find a new domain, try using [Domainr](https://domainr.com/).
 
@@ -87,7 +87,7 @@ Luckily, there are still plenty of other great options out there. The downside i
 
 You can host most of your projects for free using a combination of the different providers we recommend, but you'll have a bit more leg work to do. You'll have to create an account and get familiar with a few different providers.
 
-If you can pay for hosting, things are more straightforward. It will afford you the luxury of choosing one provider you can learn deeply, and you'll be able to manage all you're apps from one place.
+If you can pay for hosting, things are more straightforward. It will afford you the luxury of choosing one provider you can learn deeply, and you'll be able to manage all your apps from one place.
 
 Whatever your circumstances, we've got you covered. Here are the PaaS providers we recommend.
 
@@ -108,7 +108,7 @@ Whatever your circumstances, we've got you covered. Here are the PaaS providers 
 
 - [Homepage](https://fly.io/)
 - [Documentation](https://fly.io/docs/)
-- [Guide: Official getting started with NodeJS on Fly.io guide](https://fly.io/docs/NodeJS/getting-started/)
+- [Guide: Official getting started with NodeJS on Fly.io guide](https://fly.io/docs/languages-and-frameworks/node/)
 - [Guide: GoNodeJS video guide for deploying NodeJS applications to Fly.io](https://www.youtube.com/watch?v=6Zp9y8nF5rE&)
 
 ---
@@ -221,6 +221,7 @@ This will be where the Git skills you've been learning will start to really pay 
    - If you're having trouble deploying, check out the [Debugging and Troubleshooting Deployments](#debugging-and-troubleshooting-deployments) section for some tips.
    - If for some reason the deployment is still too difficult, and you just can't seem to get it to work, move onto the next project and come back once you've deployed your MDN project. The steps in their tutorial hold your hand a bit more through the process and will give you the confidence you need to deploy this project.
 1. Once you've hosted your app and fired up your database, you'll need to provide the Express app with a MongoDB connection URL that points to the database. If you're planning to publish your code on GitHub you will need to hide this URL for your database from prying eyes because it contains both your username and password. The simplest approach is to push your code to a private repository, however, if you want to show-off your code to the world, assign the connection URL to an environment variable and access it with the help of the [Dotenv](https://github.com/motdotla/dotenv) package. This [Medium article](https://medium.com/@thejasonfile/using-dotenv-package-to-create-environment-variables-33da4ac4ea8f) does a great job of explaining what they are, and how to use them with Express.
+   - If you do decide to use Dotenv for this project, you'll have to research how to import environment variables to the PaaS you choose to use or else your deployment will fail.  For instance, when using Fly.io, you need to run `fly secrets import < .env` from the command line.
 
 </div>
 

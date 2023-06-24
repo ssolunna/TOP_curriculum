@@ -32,7 +32,7 @@ Let's look at some ways we can change recent and distant history to fit our need
 
 #### Getting Set Up
 
-Before we get started with the lesson, let's create a Git playground in which we can safely follow along with the code and perform history changing operations. Go to GitHub, and as you have in the past create a new repository. Call it whatever you'd like, and clone this repository to your local system. Now, let's `cd` into the repository we just cloned, and create some new files! Once you're in the repository follow along with the following commands. Look them up if you're confused about anything that's happening.
+Before we get started with the lesson, let's create a Git playground in which we can safely follow along with the code and perform history changing operations. Go to GitHub, and as you have in the past create a new repository. Call it whatever you'd like, and clone this repository to your local system. Now, let's `cd` into the repository we just cloned, and create some new files! Once you're in the repository follow along with the following commands(including the typo). Look them up if you're confused about anything that's happening.
 
 ~~~bash
   $ touch test{1..4}.md
@@ -197,8 +197,12 @@ You might be feeling overwhelmed at this point, so let's recap what we've learne
 
 2.  Read [think-like-a-git](http://think-like-a-git.net/)
     *   Take your time with this resource as well, it's very well written and will be very helpful in solidifying your understanding of Git.
-</div>
 
+3.  Read the chapter on [Rebasing covered by git-scm](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) for an even deeper dive into Rebasing.
+
+4.  Read the chapter on [Reset covered by git-scm](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified) for a deeper dive into `git reset`.
+
+</div>
 
 ### Additional Resources
 
@@ -207,8 +211,6 @@ This section contains helpful links to related content. It isn’t required, so 
 *   Read this [Git Cheat Sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet) if you need a reference sheet.
 *   Watch this [video about Rebase & Merge](https://www.youtube.com/watch?v=f1wnYdLEpgI) for an example of how to use both rebase and merge.
 *   Read the chapter on [Branches covered by git-scm](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) if you want an even deeper dive into Branches.
-*   Read the chapter on [Rebasing covered by git-scm](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) for an even deeper dive into Rebasing.
-*   Read the chapter on [Reset covered by git-scm](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified) for a deeper dive into `git reset`.
 
 ### Knowledge Check
 
